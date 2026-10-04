@@ -1,0 +1,24 @@
+# Theme: a restrained, formal palette suited to a risk/underwriting tool -
+# deep ink-navy text, a muted teal accent (not Streamlit's default red), and
+# a soft off-white background rather than stark white.
+#
+#   Ink (text)............ #10223D
+#   Slate (secondary)...... #475569
+#   Background............. #F7F8FA
+#   Secondary background.... #ECEFF3
+#   Accent (teal).......... #0F766E
+#   Border.................. #D8DEE6  (used via custom CSS in app.py)
+#   Risk red (semantic only) #B3261E (used via custom CSS, not here)
+#   Approve green (semantic) #15803D (used via custom CSS, not here)
+
+[theme]
+base = "light"
+primaryColor = "#0F766E"
+backgroundColor = "#F7F8FA"
+secondaryBackgroundColor = "#ECEFF3"
+textColor = "#10223D"
+font = "sans serif"
+
+[server]
+headless = true
+enableCORS = false

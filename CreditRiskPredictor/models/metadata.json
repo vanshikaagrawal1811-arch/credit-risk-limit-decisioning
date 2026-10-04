@@ -1,0 +1,97 @@
+{
+  "model_name": "RandomForest",
+  "cv_results": {
+    "LogisticRegression": {
+      "cv_auc_mean": 0.7610107217650548,
+      "cv_auc_std": 0.005049438961999713
+    },
+    "RandomForest": {
+      "cv_auc_mean": 0.7854536184848173,
+      "cv_auc_std": 0.0030682740067192603
+    },
+    "XGBoost": {
+      "cv_auc_mean": 0.7832173772815619,
+      "cv_auc_std": 0.003054304363308356
+    }
+  },
+  "test_auc": 0.7777425867241319,
+  "cost_based_threshold": 0.16999999999999998,
+  "threshold_tuned_on": "validation_split_calibrated_probabilities",
+  "calibration_method": "isotonic_on_frozen_estimator_fit_on_validation_split",
+  "test_recall": 0.7611152976639035,
+  "test_precision": 0.3614889047959914,
+  "raw_brier_score_test": 0.17308377720732435,
+  "calibrated_brier_score_test": 0.13554903276997973,
+  "calibration_bins": [
+    {
+      "mean_predicted": 0.041655909283392925,
+      "observed_fraction": 0.038408779149519894
+    },
+    {
+      "mean_predicted": 0.08146079974198092,
+      "observed_fraction": 0.08561341571050309
+    },
+    {
+      "mean_predicted": 0.11082162539706221,
+      "observed_fraction": 0.1207464324917673
+    },
+    {
+      "mean_predicted": 0.16313869111879467,
+      "observed_fraction": 0.18937644341801385
+    },
+    {
+      "mean_predicted": 0.19078947368420954,
+      "observed_fraction": 0.17543859649122806
+    },
+    {
+      "mean_predicted": 0.20854374933860367,
+      "observed_fraction": 0.19613259668508287
+    },
+    {
+      "mean_predicted": 0.26875677097030015,
+      "observed_fraction": 0.27102803738317754
+    },
+    {
+      "mean_predicted": 0.46751748293788026,
+      "observed_fraction": 0.45385779122541603
+    },
+    {
+      "mean_predicted": 0.729021220024388,
+      "observed_fraction": 0.7085714285714285
+    }
+  ],
+  "uses_scaled_input": false,
+  "feature_columns": [
+    "LIMIT_BAL",
+    "SEX",
+    "EDUCATION",
+    "MARRIAGE",
+    "AGE",
+    "PAY_0",
+    "PAY_2",
+    "PAY_3",
+    "PAY_4",
+    "PAY_5",
+    "PAY_6",
+    "BILL_AMT1",
+    "BILL_AMT2",
+    "BILL_AMT3",
+    "BILL_AMT4",
+    "BILL_AMT5",
+    "BILL_AMT6",
+    "PAY_AMT1",
+    "PAY_AMT2",
+    "PAY_AMT3",
+    "PAY_AMT4",
+    "PAY_AMT5",
+    "PAY_AMT6",
+    "avg_utilization",
+    "max_utilization",
+    "repayment_consistency",
+    "months_delayed",
+    "avg_pay_delay",
+    "pay_to_bill_ratio",
+    "credit_limit_log"
+  ],
+  "probability_source": "models/calibrated_model.pkl is used for the reported risk score, the decision threshold, and the decision engine's PD input. models/best_model.pkl (uncalibrated) is used only for SHAP explanations, since CalibratedClassifierCV wraps the model in a way SHAP's TreeExplainer can't look inside."
+}

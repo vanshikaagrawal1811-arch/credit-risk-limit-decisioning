@@ -1,0 +1,11 @@
+# Pinned to the exact versions this project was built and tested against,
+# for reproducible local setup and Streamlit Community Cloud deployment.
+pandas==3.0.2
+numpy==2.4.4
+scikit-learn==1.8.0
+xgboost==3.4.1
+shap==0.52.0
+streamlit==1.64.0
+matplotlib==3.10.8
+joblib==1.5.3
+pytest==9.1.1

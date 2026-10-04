@@ -1,0 +1,32 @@
+{
+  "model_name": "GradientBoosting",
+  "cv_results": {
+    "LinearRegression": {
+      "cv_r2_mean": 0.43602721549823276,
+      "cv_r2_std": 0.008978347608695097
+    },
+    "GradientBoosting": {
+      "cv_r2_mean": 0.5554104780001485,
+      "cv_r2_std": 0.007455426290598166
+    }
+  },
+  "test_mae": 0.16902794581255623,
+  "test_rmse": 0.22972797912003698,
+  "test_r2": 0.5645212043522356,
+  "target_mean": 0.37311748916799126,
+  "feature_columns": [
+    "SEX",
+    "EDUCATION",
+    "MARRIAGE",
+    "AGE",
+    "PAY_0",
+    "PAY_2",
+    "PAY_3",
+    "PAY_4",
+    "PAY_5",
+    "PAY_6",
+    "repayment_consistency",
+    "months_delayed",
+    "avg_pay_delay"
+  ]
+}
