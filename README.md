@@ -2,7 +2,7 @@
 
 Two ML models feeding an explicit decision rule, built on the UCI *Default of Credit Card Clients* dataset (30,000 clients, Yeh & Lien 2009) and deployed as a Streamlit app.
 
-**Live demo:** _[add your Streamlit Community Cloud URL here](https://credit-risk-limit-decisioning-emdrg6xdd5hh2r692tuzkz.streamlit.app/)_
+**Live demo:** _[https://credit-risk-limit-decisioning-emdrg6xdd5hh2r692tuzkz.streamlit.app/](https://credit-risk-limit-decisioning-emdrg6xdd5hh2r692tuzkz.streamlit.app/)_
 
 | Component | What it does |
 |---|---|
